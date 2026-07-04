@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Next Developer</title>
+  <style>
+    /* Global Reset and Theme */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0f172a;
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Navbar Styling */
+    header {
+      background-color: #1e293b;
+      padding: 15px 20px;
+      width: 100%;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: #38bdf8;
+    }
+
+    .nav-link {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    .nav-link a {
+      color: #94a3b8;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .nav-link a:hover {
+      color: #ffffff;
+    }
+
+    /* Main Hero Section Layout - FIXED */
+    .hero-Container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .hero-title {
+      font-size: 2.2rem;
+      font-weight: 800;
+      line-height: 1.4;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+
+    .hero-title span {
+      color: #38bdf8;
+    }
+
+    .hero-description {
+      font-size: 1.1rem;
+      color: #94a3b8;
+      line-height: 1.6;
+      margin-bottom: 40px;
+      max-width: 600px;
+    }
+
+    /* Core Action Button */
+    .cta-button {
+      background-color: #f1f5f9;
+      color: #0f172a;
+      text-decoration: none;
+      padding: 14px 28px;
+      font-size: 1rem;
+      font-weight: 700;
+      border-radius: 8px;
+      text-transform: lowercase;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease, background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #e2e8f0;
+      transform: translateY(-2px);
+    }
+
+    /* Mobile Responsive Tweaks for Acode Preview */
+    @media (max-width: 600px) {
+      .navbar {
+        flex-direction: column;
+        gap: 15px;
+      }
+      .hero-title {
+        font-size: 1.8rem !important;
+      }
+      .hero-description {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Clean, closed header structure -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Next web developer</div>
+      <ul class="nav-link">
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#Java script">JavaScript</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main section completely separated from navbar -->
+  <main class="hero-Container">
+    <h1 class="hero-title">
+      Welcome Next to complete your incomplete dream of <span>web development</span>
+    </h1>
+    <p class="hero-description">
+      Master HTML, CSS, JavaScript, and modern web development through interactive lessons, coding challenges, and real-world projects.
+    </p>
+    <a href="login.html" class="cta-button">click here to start your journey</a>
+  </main>
+
+  <!-- Live Mobile Developer Tools Console Support -->
+  <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+  <script>eruda.init();</script>
+</body>
+</html>
